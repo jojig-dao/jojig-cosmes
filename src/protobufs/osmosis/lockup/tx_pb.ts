@@ -531,3 +531,86 @@ export class MsgSetRewardReceiverAddressResponse extends Message<MsgSetRewardRec
   }
 }
 
+/**
+ * DEPRECATED
+ * Following messages are deprecated but kept to support indexing.
+ *
+ * @generated from message osmosis.lockup.MsgUnlockPeriodLock
+ */
+export class MsgUnlockPeriodLock extends Message<MsgUnlockPeriodLock> {
+  /**
+   * @generated from field: string owner = 1;
+   */
+  owner = "";
+
+  /**
+   * @generated from field: uint64 ID = 2;
+   */
+  ID = protoInt64.zero;
+
+  constructor(data?: PartialMessage<MsgUnlockPeriodLock>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "osmosis.lockup.MsgUnlockPeriodLock";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+    { no: 2, name: "ID", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MsgUnlockPeriodLock {
+    return new MsgUnlockPeriodLock().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MsgUnlockPeriodLock {
+    return new MsgUnlockPeriodLock().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MsgUnlockPeriodLock {
+    return new MsgUnlockPeriodLock().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: MsgUnlockPeriodLock | PlainMessage<MsgUnlockPeriodLock> | undefined, b: MsgUnlockPeriodLock | PlainMessage<MsgUnlockPeriodLock> | undefined): boolean {
+    return proto3.util.equals(MsgUnlockPeriodLock, a, b);
+  }
+}
+
+/**
+ * @generated from message osmosis.lockup.MsgUnlockTokens
+ */
+export class MsgUnlockTokens extends Message<MsgUnlockTokens> {
+  /**
+   * @generated from field: string owner = 1;
+   */
+  owner = "";
+
+  constructor(data?: PartialMessage<MsgUnlockTokens>) {
+    super();
+    proto3.util.initPartial(data, this);
+  }
+
+  static readonly runtime: typeof proto3 = proto3;
+  static readonly typeName = "osmosis.lockup.MsgUnlockTokens";
+  static readonly fields: FieldList = proto3.util.newFieldList(() => [
+    { no: 1, name: "owner", kind: "scalar", T: 9 /* ScalarType.STRING */ },
+  ]);
+
+  static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): MsgUnlockTokens {
+    return new MsgUnlockTokens().fromBinary(bytes, options);
+  }
+
+  static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): MsgUnlockTokens {
+    return new MsgUnlockTokens().fromJson(jsonValue, options);
+  }
+
+  static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): MsgUnlockTokens {
+    return new MsgUnlockTokens().fromJsonString(jsonString, options);
+  }
+
+  static equals(a: MsgUnlockTokens | PlainMessage<MsgUnlockTokens> | undefined, b: MsgUnlockTokens | PlainMessage<MsgUnlockTokens> | undefined): boolean {
+    return proto3.util.equals(MsgUnlockTokens, a, b);
+  }
+}
+
