@@ -1,8 +1,8 @@
 {
-  "name": "cosmes",
-  "version": "0.0.71",
+  "name": "jojig-cosmes",
+  "version": "0.0.71.1",
   "private": false,
-  "packageManager": "pnpm@8.3.0",
+  "XpackageManager": "pnpm@8.3.0",
   "sideEffects": false,
   "type": "module",
   "files": [
@@ -18,15 +18,15 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "pnpm clean && tsc && tsc-alias",
+    "build": "bun clean && tsc && tsc-alias",
     "dev": "concurrently \"tsc -w\" \"tsc-alias -w\"",
     "gen:protobufs": "node scripts/gen-protobufs.mjs",
     "gen:registry": "node scripts/gen-registry.mjs",
     "lint": "eslint **/*.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest --run",
-    "test:suite": "pnpm lint && pnpm typecheck && pnpm test",
-    "prepublishOnly": "pnpm build"
+    "test:suite": "bun lint && bun typecheck && bun test",
+    "prepublishOnly": "bun build"
   },
   "peerDependencies": {
     "@bufbuild/protobuf": "1.2.0",
@@ -73,7 +73,7 @@
     "rimraf": "^5.0.0",
     "tsc-alias": "^1.8.6",
     "tsx": "^3.12.7",
-    "typescript": "^5.0.4",
+    "typescript": "^5.6.3",
     "vitest": "^0.31.0"
   }
 }

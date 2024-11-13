@@ -248,7 +248,7 @@ export class MsgInstantiateContractResponse extends Message<MsgInstantiateContra
 
 /**
  * MsgInstantiateContract2 create a new smart contract instance for the given
- * code id with a predicable address.
+ * code id with a predictable address.
  *
  * @generated from message cosmwasm.wasm.v1.MsgInstantiateContract2
  */
@@ -1281,7 +1281,7 @@ export class MsgStoreAndInstantiateContract extends Message<MsgStoreAndInstantia
   admin = "";
 
   /**
-   * Label is optional metadata to be stored with a constract instance.
+   * Label is optional metadata to be stored with a contract instance.
    *
    * @generated from field: string label = 7;
    */
