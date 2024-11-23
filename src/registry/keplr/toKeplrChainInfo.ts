@@ -125,6 +125,9 @@ export function toKeplrChainInfo(
     });
 
   return {
+
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     chainId: chainRegistryChainInfo.chain_id,
     chainName: chainRegistryChainInfo.chain_name,
 
@@ -135,6 +138,9 @@ export function toKeplrChainInfo(
       coinType: chainRegistryChainInfo.slip44 ?? 118,
     },
     bech32Config: {
+
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       bech32PrefixAccAddr: chainRegistryChainInfo.bech32_prefix,
       bech32PrefixAccPub: `${chainRegistryChainInfo.bech32_prefix}pub`,
       bech32PrefixValAddr: `${chainRegistryChainInfo.bech32_prefix}valoper`,

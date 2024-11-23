@@ -5,8 +5,10 @@
     "module": "ES2020",
     "baseUrl": ".",
     "paths": {
-      "cosmes/*": ["./src/*"]
+      "cosmes/*": ["./src/*"],
+      "jojig-cosmes/*": ["./src/*"]
     },
+    "rootDir": "./src",
     "outDir": "./dist",
     // `node16` is too strict and causes type errors for imported pkgs.
     // We use `tsc-alias` to help add the file extensions instead.

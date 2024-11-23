@@ -1,5 +1,5 @@
 import SignClient from "@walletconnect/sign-client";
-import { SignDoc, StdSignDoc } from "cosmes/registry";
+import { SignDoc, StdSignDoc } from "jojig-cosmes/registry";
 import { debounce } from "lodash-es";
 
 import { isAndroid, isMobile } from "../utils/os";

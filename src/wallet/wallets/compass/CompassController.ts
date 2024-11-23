@@ -1,4 +1,4 @@
-import { Secp256k1PubKey } from "cosmes/client";
+import { Secp256k1PubKey } from "jojig-cosmes/client";
 
 import { WalletName } from "../../constants/WalletName";
 import { WalletType } from "../../constants/WalletType";
@@ -32,10 +32,15 @@ export class CompassController extends WalletController {
 
   protected async connectExtension<T extends string>(chains: ChainInfo<T>[]) {
     const wallets = new Map<T, ConnectedWallet>();
-    const ext = window.compass;
-    if (!ext) {
-      throw new Error("Compass extension is not installed");
-    }
+   if (!("compass" in window)) {
+     throw new Error("Compass extension is not installed");
+   }
+     const ext = window.compass;
+     if (!ext) {
+       throw new Error("Compass extension is not installed");
+     }
+
+
     await WalletError.wrap(ext.enable(chains.map(({ chainId }) => chainId)));
     for (const { chainId, rpc, gasPrice } of Object.values(chains)) {
       const { name, bech32Address, pubKey, isNanoLedger } =

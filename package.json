@@ -18,15 +18,15 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "bun clean && tsc && tsc-alias",
+    "build": "pnpm clean && tsc && tsc-alias",
     "dev": "concurrently \"tsc -w\" \"tsc-alias -w\"",
     "gen:protobufs": "node scripts/gen-protobufs.mjs",
     "gen:registry": "node scripts/gen-registry.mjs",
     "lint": "eslint **/*.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest --run",
-    "test:suite": "bun lint && bun typecheck && bun test",
-    "prepublishOnly": "bun build"
+    "test:suite": "pnpm lint && pnpm typecheck && pnpm test",
+    "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
     "@bufbuild/protobuf": "1.2.0",
