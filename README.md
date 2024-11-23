@@ -1,9 +1,9 @@
 <!-- omit in toc -->
-# CosmES
+# CosmES - JoJig Fork
 
-[![npm version](https://badge.fury.io/js/cosmes.svg)](https://www.npmjs.com/package/cosmes)
+[![npm version](https://badge.fury.io/js/jojig-cosmes.svg)](https://www.npmjs.com/package/jojig-cosmes)
 
-A tree-shakeable, framework agnostic, [pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) alternative of [CosmJS](https://github.com/cosmos/cosmjs) and [Cosmos Kit](https://cosmoskit.com) (**generate bundles up to 10x smaller than Cosmos Kit**).
+A tree-shakeable, framework-agnostic, [pure ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c) alternative of [CosmJS](https://github.com/cosmos/cosmjs) and [Cosmos Kit](https://cosmoskit.com) (**generate bundles up to 10x smaller than Cosmos Kit**).
 
 - [Features](#features)
 - [Installing](#installing)
