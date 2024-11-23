@@ -54,10 +54,10 @@ const REPOS = [
     repo: "evmos/ethermint#main",
     paths: ["proto"],
   },
-  {
+/*  {
     repo: "dymensionxyz/osmosis#main-dym",
     paths: ["proto"],
-  },
+  },*/
 ];
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -106,7 +106,7 @@ console.log("Generating TS files from proto files...");
     console.log(`✔️ [${repo}]`);
   }
 }
-
+/*
 console.log("Flattening dymension protobufs...");
 {
   // Move all dirs in protobufs/dymension/osmosis out into protobufs/dymension
@@ -130,7 +130,7 @@ console.log("Flattening dymension protobufs...");
     }
   });
 }
-
+*/
 console.log("Generating src/index.ts file and renaming exports...");
 {
   const LAST_SEGMENT_REGEX = /[^/]+$/;

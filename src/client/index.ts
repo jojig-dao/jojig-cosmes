@@ -15,10 +15,13 @@ export {
   simulateAstroportSinglePoolSwap,
   type SimulateAstroportSinglePoolSwapParams,
 } from "./apis/simulateAstroportSinglePoolSwap";
+/*
 export {
   simulateDymensionSinglePoolSwap,
   type SimulateDymensionSinglePoolSwapParams,
-} from "./apis/simulateDymensionSinglePoolSwap";
+} from "./apis/simulateDymensionSinglePoolSwap.ts";
+
+ */
 export {
   simulateKujiraSinglePoolSwap,
   type SimulateKujiraSinglePoolSwapParams,
